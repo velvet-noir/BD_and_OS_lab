@@ -127,3 +127,13 @@ sudo systemctl enable postgresql
 SELECT * FROM schema1.table;
 SELECT * FROM schema2.table;
 ```
+
+- ### Использование утилиты psql для базовых операций
+
+Основные SQL-запросы в схеме `public`:
+
+![img](../assets/lab_1_image/image_16.png)
+
+В схеме `test_schema`:
+
+![img](../assets/lab_1_image/image_17.png)
