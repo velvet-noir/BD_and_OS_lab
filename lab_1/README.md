@@ -15,7 +15,7 @@
 ![img](../assets/lab_1_image/image_1.png)
 
 Установил `openssh-server` для подключения к виртуалке с помощью ssh из терминала локальной машины:
-```
+```bash
 sudo apt install openssh-server
 ```
 ![img](../assets/lab_1_image/image_2.png)
@@ -30,7 +30,7 @@ sudo apt install openssh-server
 
 - ### Установка PostgreSQL
 Установил последную версию PostgreSQL:
-```
+```bash
 sudo apt install postgresql postgresql-contrib
 ```
 - `postgresql` - сам сервер PostgreSQL
@@ -42,7 +42,7 @@ sudo apt install postgresql postgresql-contrib
 При установке PostgreSQL учётная запись `postgres` создается автоматически.
 
 Проверить наличие учётная записи можно попыткой переключения на неё:
-```
+```bash
 sudo su - postgres
 ```
 
@@ -75,6 +75,10 @@ sudo su - postgres
 
 Тут есть настройка подключения с локальной машины или другого host'а, указание того к каким БД и какой пользователь может подключиться, список ip адресов, с которых можно производить подключение к БД, а также метод аутентификации.
 
-После редактирования конфигов сервис PostgreSQL был перезапушен командой: `sudo systemctl restart postgresql`, также был проверен статус сервера, что он запустился и работает:
+После редактирования конфигов сервис PostgreSQL был перезапушен командой:
+``` bash
+sudo systemctl restart postgresql
+```
+Также был проверен статус сервера, что он запустился и работает:
 
 ![img](../assets/lab_1_image/image_10.png)
