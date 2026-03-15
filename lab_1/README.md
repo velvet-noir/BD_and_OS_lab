@@ -137,3 +137,27 @@ SELECT * FROM schema2.table;
 В схеме `test_schema`:
 
 ![img](../assets/lab_1_image/image_17.png)
+
+- ### Настройка локальных и сетевых подключений
+
+Для подключения к БД с локальной машины изначально были отредактированы конфиги:
+
+- postgresql.conf:
+
+```
+listen_addresses = '*'
+```
+
+- pg_hba.conf:
+
+```
+host    dbnikolaev      nikolaev        192.168.1.0/24          scram-sha-256
+```
+
+Подключние к БД из Navicat:
+
+![img](../assets/lab_1_image/image_18.png)
+
+Проверка отображения схем и вызов SQL-зпроса:
+
+![img](../assets/lab_1_image/image_19.png)
