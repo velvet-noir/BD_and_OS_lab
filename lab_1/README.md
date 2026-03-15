@@ -98,3 +98,17 @@ sudo systemctl enable postgresql
 ```
 
 ![img](../assets/lab_1_image/image_11.png)
+
+- ### Создание тестовой базы данных
+
+Создание нового пользователя:
+
+![img](../assets/lab_1_image/image_12.png)
+
+Создание новой БД:
+
+![img](../assets/lab_1_image/image_13.png)
+
+Проверка доступности новой БД для нового пользователя:
+
+![img](../assets/lab_1_image/image_14.png)
