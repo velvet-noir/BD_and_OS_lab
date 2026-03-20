@@ -161,3 +161,30 @@ host    dbnikolaev      nikolaev        192.168.1.0/24          scram-sha-256
 Проверка отображения схем и вызов SQL-зпроса:
 
 ![img](../assets/lab_1_image/image_19.png)
+
+- ### Журналирование (logging)
+
+Для сохранения логов в файле `postgresql.conf` были раскоментированы или измененены параметры:
+
+```
+logging_collector = on # сохранение логов в файл
+log_directory = 'log' # директория сохранения файлов
+log_filename = 'postgresql-%Y-%m-%d_%H%M%S.log' # шаблон названия файла
+log_min_messages = info # "уровень" сообщения, которое будет логироваться
+log_line_prefix = '%m [%p] %q%u@%d ' # формат строки при сохранения лога
+log_statement = 'all' # логирование SQL-запросов
+```
+После обновления файла конфигурации сервис был перезапущен : `sudo systemctl restart postgresql`.
+
+Пример работы логирования:
+
+Выполнены два запроса:
+
+![img](../assets/lab_1_image/image_20.png)
+
+![img](../assets/lab_1_image/image_21.png)
+
+Логи:
+
+![img](../assets/lab_1_image/image_22.png)
+
