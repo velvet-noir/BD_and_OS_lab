@@ -188,3 +188,18 @@ log_statement = 'all' # логирование SQL-запросов
 
 ![img](../assets/lab_1_image/image_22.png)
 
+- ### Назначение ролей и прав
+
+Создание роли и пользователя с ограничеными правами:
+
+![img](../assets/lab_1_image/image_23.png)
+
+Для роли `limit_role` даем права на подключение к БД `dbnikolaev` к схеме `test_schema` и права на SELECT запросы из таблиц из этой схемы.
+
+Для пользователя `limit_user` указываем через GRANT, что он наследует права роли `limit_role`.
+
+Провека:
+
+![img](../assets/lab_1_image/image_24.png)
+
+Пользователь `limit_user` может выполнить SELECT запрос из БД `dbnikolaev` из схемы `test_schema`, но не может из схемы `public`, т.к. на неё права не выданы.
