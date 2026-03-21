@@ -10,7 +10,7 @@
 Обновил систему с помощью команд `sudo apt update` и `sudo apt upgrade`.
 
 - `sudo apt update` - проверка на новые версии;
-- `udo apt upgrade` - установка обновлений.
+- `sudo apt upgrade` - установка обновлений.
 
 ![img](../assets/lab_1_image/image_1.png)
 
@@ -59,7 +59,7 @@ sudo su - postgres
 
 - ### Первичная настройка конфигурационных файлов
 
-Изначально узнал где лежат конфики через `sudo -u postgres psql` и `SHOW config_file;`.
+Изначально узнал где лежат конфиги через `sudo -u postgres psql` и `SHOW config_file;`.
 
 ![img](../assets/lab_1_image/image_7.png)
 
