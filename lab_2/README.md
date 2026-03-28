@@ -163,3 +163,23 @@ SELECT pg_terminate_backend(2260);
 ```
 
 ![img](../assets/lab_2_image/image_18.png)
+
+### 8. Логирование и анализ логов
+
+- Логи PostgreSQL:
+
+Просмотр директории с логами:
+
+![img](../assets/lab_2_image/image_19.png)
+
+Просмотр содержимого файла с логами:
+
+![img](../assets/lab_2_image/image_20.png)
+
+- Логи Debian:
+
+![img](../assets/lab_2_image/image_21.png)
+
+В современных версия Debian для просмотра логов используется утилита `journalctl`:
+
+![img](../assets/lab_2_image/image_22.png)
