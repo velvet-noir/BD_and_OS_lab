@@ -183,3 +183,4 @@ SELECT pg_terminate_backend(2260);
 В современных версия Debian для просмотра логов используется утилита `journalctl`:
 
 ![img](../assets/lab_2_image/image_22.png)
+
