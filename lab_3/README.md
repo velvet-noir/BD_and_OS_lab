@@ -38,7 +38,7 @@ FROM generate_series(1, 100000) AS gs;
 
 ![img](../assets/lab_3_image/image_3.png)
 
-Создаём индекс по полу `age`:
+Создаём индекс по полю `age`:
 
 ```SQL
 CREATE INDEX idx_users_age ON users(age);
